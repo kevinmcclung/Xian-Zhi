@@ -15,37 +15,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f35-Cj-0XI" userLabel="Top">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="440"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tgA-NA-qlj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="私人先知" translatesAutoresizingMaskIntoConstraints="NO" id="EQL-6f-KMb">
-                                        <rect key="frame" x="0.0" y="7" width="414" height="425"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f35-Cj-0XI" userLabel="Top">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="444"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="私人先知" translatesAutoresizingMaskIntoConstraints="NO" id="EQL-6f-KMb">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="444"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="EQL-6f-KMb" secondAttribute="bottom" id="6Wp-uY-WiP"/>
+                                            <constraint firstItem="EQL-6f-KMb" firstAttribute="top" secondItem="f35-Cj-0XI" secondAttribute="top" id="Bgi-9W-b6A"/>
+                                            <constraint firstItem="EQL-6f-KMb" firstAttribute="centerY" secondItem="f35-Cj-0XI" secondAttribute="centerY" id="kdC-pj-GDe"/>
+                                            <constraint firstAttribute="trailing" secondItem="EQL-6f-KMb" secondAttribute="trailing" id="l1i-Zq-gVH"/>
+                                            <constraint firstItem="EQL-6f-KMb" firstAttribute="centerX" secondItem="f35-Cj-0XI" secondAttribute="centerX" id="p18-AW-J64"/>
+                                            <constraint firstItem="EQL-6f-KMb" firstAttribute="leading" secondItem="f35-Cj-0XI" secondAttribute="leading" id="qkW-bc-Yay"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yao-Wp-JC1" userLabel="Bottom">
+                                        <rect key="frame" x="0.0" y="452" width="414" height="444"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="0D4-dr-a7A">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="444"/>
+                                                <string key="text">道可道非常道
+名可名非常名
+无名天地之始
+有名万物之母</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="0D4-dr-a7A" secondAttribute="bottom" id="1BL-Ae-dsI"/>
+                                            <constraint firstItem="0D4-dr-a7A" firstAttribute="top" secondItem="Yao-Wp-JC1" secondAttribute="top" id="L48-h9-j5T"/>
+                                            <constraint firstItem="0D4-dr-a7A" firstAttribute="centerY" secondItem="Yao-Wp-JC1" secondAttribute="centerY" id="PRx-7c-8TJ"/>
+                                            <constraint firstItem="0D4-dr-a7A" firstAttribute="centerX" secondItem="Yao-Wp-JC1" secondAttribute="centerX" id="Sar-0Y-US1"/>
+                                            <constraint firstAttribute="trailing" secondItem="0D4-dr-a7A" secondAttribute="trailing" id="VKW-u0-VtN"/>
+                                            <constraint firstItem="0D4-dr-a7A" firstAttribute="leading" secondItem="Yao-Wp-JC1" secondAttribute="leading" id="lW5-QN-2aQ"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="EQL-6f-KMb" firstAttribute="centerY" secondItem="f35-Cj-0XI" secondAttribute="centerY" id="kdC-pj-GDe"/>
-                                    <constraint firstItem="EQL-6f-KMb" firstAttribute="centerX" secondItem="f35-Cj-0XI" secondAttribute="centerX" id="p18-AW-J64"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yao-Wp-JC1" userLabel="Bottom">
-                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="道可道非常道，名可名非常名。无名天地之始，有名万物之母。故常无欲，以观其妙；常有欲，以观其徼。。。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0D4-dr-a7A">
-                                        <rect key="frame" x="40" y="23" width="334" height="401"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="0D4-dr-a7A" firstAttribute="centerY" secondItem="Yao-Wp-JC1" secondAttribute="centerY" id="PRx-7c-8TJ"/>
-                                    <constraint firstItem="0D4-dr-a7A" firstAttribute="centerX" secondItem="Yao-Wp-JC1" secondAttribute="centerX" id="Sar-0Y-US1"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tgA-NA-qlj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2sw-sG-e2u"/>
+                            <constraint firstAttribute="bottom" secondItem="tgA-NA-qlj" secondAttribute="bottom" id="47G-45-8jU"/>
+                            <constraint firstItem="tgA-NA-qlj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ctt-1e-w6m"/>
+                            <constraint firstItem="tgA-NA-qlj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dAi-PH-5VN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
