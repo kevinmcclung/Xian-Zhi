@@ -12,10 +12,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sageAnswer: UIImageView!
     
+    @IBOutlet weak var button: UIButton!
+    
     var answers = [ #imageLiteral(resourceName: "千真万确"), #imageLiteral(resourceName: "也未可知"), #imageLiteral(resourceName: "大错特错")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        button.titleLabel?.adjustsFontSizeToFitWidth = true;
         // Do any additional setup after loading the view.
     }
     

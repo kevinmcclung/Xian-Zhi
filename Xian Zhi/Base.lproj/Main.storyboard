@@ -15,30 +15,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ped-IJ-tbR">
-                                <rect key="frame" x="86" y="500" width="233" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="先知以为然否？">
-                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="askQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFp-kY-qGC"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AgA-rF-OWu">
-                                <rect key="frame" x="57" y="560" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="私人先知" translatesAutoresizingMaskIntoConstraints="NO" id="tWJ-N0-UQ7">
-                                <rect key="frame" x="52" y="148" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6ob-uL-LVk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p03-8B-H7z" userLabel="Top">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="私人先知" translatesAutoresizingMaskIntoConstraints="NO" id="tWJ-N0-UQ7">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tWJ-N0-UQ7" firstAttribute="centerX" secondItem="p03-8B-H7z" secondAttribute="centerX" id="2A3-ML-Tbj"/>
+                                            <constraint firstAttribute="trailing" secondItem="tWJ-N0-UQ7" secondAttribute="trailing" id="EBR-EJ-ONT"/>
+                                            <constraint firstItem="tWJ-N0-UQ7" firstAttribute="leading" secondItem="p03-8B-H7z" secondAttribute="leading" id="f74-bM-WTH"/>
+                                            <constraint firstItem="tWJ-N0-UQ7" firstAttribute="centerY" secondItem="p03-8B-H7z" secondAttribute="centerY" id="mcY-gy-qSF"/>
+                                            <constraint firstItem="tWJ-N0-UQ7" firstAttribute="top" secondItem="p03-8B-H7z" secondAttribute="top" id="qhI-cL-N6I"/>
+                                            <constraint firstAttribute="bottom" secondItem="tWJ-N0-UQ7" secondAttribute="bottom" id="zkZ-1E-xAW"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMg-Oa-Fw7" userLabel="Middle">
+                                        <rect key="frame" x="0.0" y="284" width="414" height="284"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ped-IJ-tbR">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <state key="normal" title="先知以为然否？">
+                                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="askQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFp-kY-qGC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Ped-IJ-tbR" secondAttribute="trailing" id="LJ9-ku-mp1"/>
+                                            <constraint firstItem="Ped-IJ-tbR" firstAttribute="top" secondItem="lMg-Oa-Fw7" secondAttribute="top" id="MGp-6t-xvG"/>
+                                            <constraint firstItem="Ped-IJ-tbR" firstAttribute="centerY" secondItem="lMg-Oa-Fw7" secondAttribute="centerY" id="b8v-aP-pow"/>
+                                            <constraint firstItem="Ped-IJ-tbR" firstAttribute="centerX" secondItem="lMg-Oa-Fw7" secondAttribute="centerX" id="cit-YS-VjI"/>
+                                            <constraint firstItem="Ped-IJ-tbR" firstAttribute="leading" secondItem="lMg-Oa-Fw7" secondAttribute="leading" id="fvd-7y-tgQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ped-IJ-tbR" secondAttribute="bottom" id="oJC-3d-Pda"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBp-26-bdt" userLabel="Bottom">
+                                        <rect key="frame" x="0.0" y="568" width="414" height="284"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AgA-rF-OWu">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="AgA-rF-OWu" firstAttribute="leading" secondItem="GBp-26-bdt" secondAttribute="leading" id="5kq-DC-io3"/>
+                                            <constraint firstItem="AgA-rF-OWu" firstAttribute="top" secondItem="GBp-26-bdt" secondAttribute="top" id="aCM-ja-LfX"/>
+                                            <constraint firstAttribute="bottom" secondItem="AgA-rF-OWu" secondAttribute="bottom" id="sEY-Ke-XJD"/>
+                                            <constraint firstAttribute="trailing" secondItem="AgA-rF-OWu" secondAttribute="trailing" id="xet-Vi-PVb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6ob-uL-LVk" secondAttribute="bottom" id="5QC-1j-bar"/>
+                            <constraint firstItem="6ob-uL-LVk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IC5-KZ-9kr"/>
+                            <constraint firstItem="6ob-uL-LVk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b7t-6X-bVO"/>
+                            <constraint firstItem="6ob-uL-LVk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rfx-IT-BO1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="Ped-IJ-tbR" id="Ru1-9L-JoP"/>
                         <outlet property="sageAnswer" destination="AgA-rF-OWu" id="jZE-OO-9O1"/>
                     </connections>
                 </viewController>
