@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C96AEBE2414728E0049A748 /* Xian Zhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xian Zhi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C96AEBE2414728E0049A748 /* 私人先知.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "私人先知.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C96AEC12414728E0049A748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C96AEC32414728E0049A748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3C96AEC52414728E0049A748 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		3C96AEBF2414728E0049A748 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3C96AEBE2414728E0049A748 /* Xian Zhi.app */,
+				3C96AEBE2414728E0049A748 /* 私人先知.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = "Xian Zhi";
 			productName = "Xian Zhi";
-			productReference = 3C96AEBE2414728E0049A748 /* Xian Zhi.app */;
+			productReference = 3C96AEBE2414728E0049A748 /* 私人先知.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +291,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nr.Zafiro-Verde.Xian-Zhi";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "私人先知";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "nr.Zafiro-Verde.Xian-Zhi";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "私人先知";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
