@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,14 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6ob-uL-LVk">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6ob-uL-LVk">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p03-8B-H7z" userLabel="Top">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="341"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="私人先知" translatesAutoresizingMaskIntoConstraints="NO" id="tWJ-N0-UQ7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="341"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -35,11 +35,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMg-Oa-Fw7" userLabel="Middle">
-                                        <rect key="frame" x="0.0" y="284" width="414" height="284"/>
+                                        <rect key="frame" x="0.0" y="341" width="414" height="170"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ped-IJ-tbR">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                                 <state key="normal" title="先知以为然否？">
                                                     <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -58,10 +58,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBp-26-bdt" userLabel="Bottom">
-                                        <rect key="frame" x="0.0" y="568" width="414" height="284"/>
+                                        <rect key="frame" x="0.0" y="511" width="414" height="341"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AgA-rF-OWu">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="341"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -72,6 +72,10 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="GBp-26-bdt" firstAttribute="height" secondItem="p03-8B-H7z" secondAttribute="height" id="Nhu-SL-sEG"/>
+                                    <constraint firstItem="p03-8B-H7z" firstAttribute="height" secondItem="6ob-uL-LVk" secondAttribute="height" multiplier="0.4" id="gb2-6R-Y3l"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
