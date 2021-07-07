@@ -1,2 +1,1 @@
-# Xian-Zhi
-这个APP是你的算命先生！
+先知 (Xiānzhī, meaning 'Prophet') is an unpublished Chinese fortune-telling app for iOS.
